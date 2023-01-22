@@ -13,10 +13,11 @@ const myPet = {
     }
 }
 
+//Log color on favorite toy.
 console.log(myPet.favoriteToy.color);
 
 
-// Make favourite toy change color
+// Make favourite toy change color.
 var button = document.querySelector("button");
 var circle = document.getElementById("changeMe");
 
@@ -30,8 +31,7 @@ function changeColor(){
 button.onclick = changeColor;
 
 
-
-// Find the total age of pet friends
+// Find the total age of friends
 var totalAge = myPet.friendsAge;
 
 var sum = totalAge.reduce (function (a, b) {
@@ -39,5 +39,3 @@ var sum = totalAge.reduce (function (a, b) {
 });
 
 console.log(sum);
-
-
