@@ -11,7 +11,7 @@ This objet has the following:
 - friendAge: age on friends array with numbers
 - nested objects - detailsOfPet.
 
-# Functions.
+### Functions.
 - Find the total age on friends and log number.
 - Build a user interface, circle (ball) with a push button to change color on favorite toy.
 
