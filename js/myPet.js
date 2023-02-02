@@ -10,14 +10,20 @@ const myPet = {
         kind: "ball",
         color: "purple",
         makesSound: false,
-    }
-}
+    },
+    whatIsFavoriteToy: function () {
+        return myPet.favoriteToy.color + " " + myPet.favoriteToy.kind;
+    },
+};
 
-//Log color on favorite toy.
-console.log(myPet.favoriteToy.color);
+//What is the favorite Toy?
+console.log(myPet.whatIsFavoriteToy());
 
 
-// Make favourite toy change color.
+
+/*  User Interface
+    Make favourite toy change color.
+*/
 var button = document.querySelector("button");
 var circle = document.getElementById("changeMe");
 
@@ -31,11 +37,3 @@ function changeColor(){
 button.onclick = changeColor;
 
 
-// Find the total age of friends
-var totalAge = myPet.friendsAge;
-
-var sum = totalAge.reduce (function (a, b) {
-    return  a+ b;
-});
-
-console.log(sum);
